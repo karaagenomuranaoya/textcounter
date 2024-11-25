@@ -17,3 +17,9 @@ myText.addEventListener('input', () => {
     liveOutput1.textContent = myText.value.replace(/\s+/g, '').length + "文字";
     liveOutput2.textContent = Math.floor(myText.value.replace(/\s+/g, '').length / 3) + "秒で読める";
 })
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('#myText')) {
+        document.activeElement.blur();
+    }
+})
