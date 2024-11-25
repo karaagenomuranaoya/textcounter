@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字数カウント</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e2eba3;
+        }
+
+        .card {
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rbga(0, 0, 0, 0.2);
+        }
+
+        #liveOutput {
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: #4a4a4a;
+        }
+
+        h1 {
+            font-family: "Emilys Candy", serif;
+            font-size: 30px;
+        }
+
+        textarea {
+            font-family: "Noto Sans JP", sans-serif;
+            /* font-weight: bold; */
+            resize: none !important;
+        }
+
+        p {
+            font-family: "Noto Sans JP", sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h2 {
+            font-family: "Emilys Candy", serif;
+            font-size: 20px;
+            color: #92cb97;
+            text-decoration: underline;
+        }
+
+        h2:hover {
+            color: #222222;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="card">
+            <header class="card-header">
+                <h1 class="card-header-title is-centered">Text Counter</h1>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <textarea class="textarea" id="myText" cols="20" rows="15" placeholder="テキストを入力"></textarea>
+                    <p class="has-text-right mt-3"><span id="liveOutput1">0文字</span></p>
+                    <p class="has-text-right mt-3"><span id="liveOutput2">0秒で読める</span></p>
+                </div>
+            </div>
+            <footer class="card-footer is-flex is-justify-content-center">
+                <a href="https://naoyanomura.onrender.com/">
+                    <h2 class="card-footer-title">Naoya Nomura's Laboratory</h2>
+                </a>
+            </footer>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
